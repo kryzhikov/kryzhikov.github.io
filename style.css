@@ -107,7 +107,7 @@ a .fab {
     background-image: url('./img/bg.jpg');
     background-size: cover;
     background-position: fixed;
-    border-radius: 15px;
+    border-radius: 25px;
     display: grid;
     margin: 1em;
     grid-template: [row1-start] "title title dates" auto[row1-end]
@@ -118,7 +118,7 @@ a .fab {
 .edu .title{
   grid-area: title;
   /* background-color: green; */
-  border-radius: 15px;
+  border-radius: 25px;
   font-size: 1.5em;
   padding: 0.5em;
   font-style: bold;
@@ -142,14 +142,14 @@ a .fab {
 .edu .dates{
   grid-area: dates;
   /* background-color: red; */
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 0.5em;
   text-align: right;
 }
 .edu .location{
   grid-area: location;
   /* background-color: violet; */
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 0.5em;
   text-align: right;
   font-style: italic;
@@ -157,7 +157,7 @@ a .fab {
 .edu .description{
   grid-area: description;
   /* background-color: blue; */
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 0.5em;
   text-align: left;
   vertical-align: center;
@@ -170,7 +170,7 @@ a .fab {
     background-image: url('./img/bg.jpg');
     background-size: cover;
     background-position: fixed;
-    border-radius: 15px;
+    border-radius: 25px;
     display: grid;
     margin: 1em;
     grid-template: [row1-start] "title title dates" auto[row1-end]
@@ -183,7 +183,7 @@ a .fab {
 .job .title{
   grid-area: title;
   /* background-color: green; */
-  border-radius: 15px;
+  border-radius: 25px;
   font-size: 1.5em;
   padding: 0.5em;
   font-style: bold;
@@ -207,14 +207,14 @@ a .fab {
 .job .dates{
   grid-area: dates;
   /* background-color: red; */
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 0.5em;
   text-align: right;
 }
 .job .location{
   grid-area: location;
   /* background-color: violet; */
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 0.5em;
   text-align: right;
   font-style: italic;
@@ -223,7 +223,7 @@ a .fab {
 .job .description{
   grid-area: description;
   /* background-color: blue; */
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 0.5em;
   text-align: left;
   vertical-align: center;
@@ -238,7 +238,7 @@ a .fab {
   background-image: url('./img/bg.jpg');
   background-size: cover;
   background-position: fixed;
-  border-radius: 15px;
+  border-radius: 25px;
   margin:1em auto;
   padding: 0.7em;
 }
@@ -248,9 +248,9 @@ a .fab {
 }
 
 .skills .column ul > li:before {
-  content: "►";
+  content: "•";
   padding-right: 0.5em;
-  color: #509e98;
+  color:black;
 }
 
 .school, .job-title {
@@ -270,8 +270,8 @@ ul.job-description li:before{
 
 footer {
  padding: 1em 1.5em;
- background: #A7B8BF;
- color: white;
+ background-image: url('./img/bg.jpg');
+ color: rgb(0, 0, 0);
  text-align: right;
 }
 
