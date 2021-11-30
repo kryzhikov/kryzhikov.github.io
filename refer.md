@@ -173,7 +173,7 @@ $$r_{x y}=\frac{\sum_{i=1}^{m}\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\righ
 
 
 ## Код 
-[GitHub]()
+[GitHub](https://github.com/kryzhikov/PrakGNN)
 ## Источники
 1. Graph Representation Learning 
 2. Stanford, cs224w
