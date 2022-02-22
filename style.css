@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* #F2EEE2 */
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
+  background: #E7E3D7;
+  
+}
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  margin: 1em;
+  text-align: center;
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  background-position: fixed;
+  border-radius: 50px;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 10px 98px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+
+div img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+h1 {
+  text-transform: uppercase;
+  margin: 0em 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+
+.fab {
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: rgb(2, 2, 2);
+}
+
+/* .job, .skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+} */
+
+.edu {
+    box-shadow: 0 5px 38px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    background-image: url('./img/bg.jpg');
+    background-size: cover;
+    background-position: fixed;
+    border-radius: 25px;
+    display: grid;
+    margin: 1em;
+    grid-template: [row1-start] "title title dates" auto[row1-end]
+                 [row2-start] "subtitle subtitle location" auto [row2-end] 
+                 [row3-start] "logo description description" auto  [row3-end] 
+
+}
+.edu .title{
+  grid-area: title;
+  /* background-color: green; */
+  border-radius: 25px;
+  font-size: 1.5em;
+  padding: 0.5em;
+  font-style: bold;
+
+}
+
+.edu .logo{
+  grid-area: logo;
+  /* background-color: yellow; */
+  text-align: center;
+  padding: 0.5em;
+  /* padding-left: 1em; */
+}
+.edu .subtitle{
+  grid-area: subtitle;
+  /* background-color: gr,een; */
+  padding: 0.5em;
+  font-style: italic;
+
+}
+.edu .dates{
+  grid-area: dates;
+  /* background-color: red; */
+  border-radius: 25px;
+  padding: 0.5em;
+  text-align: right;
+}
+.edu .location{
+  grid-area: location;
+  /* background-color: violet; */
+  border-radius: 25px;
+  padding: 0.5em;
+  text-align: right;
+  font-style: italic;
+}
+.edu .description{
+  grid-area: description;
+  /* background-color: blue; */
+  border-radius: 25px;
+  padding: 0.5em;
+  text-align: left;
+  vertical-align: center;
+
+}
+
+
+.job {
+    box-shadow: 0 5px 38px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    background-image: url('./img/bg.jpg');
+    background-size: cover;
+    background-position: fixed;
+    border-radius: 25px;
+    display: grid;
+    margin: 1em;
+    grid-template: [row1-start] "title title dates" auto[row1-end]
+                 [row2-start] "subtitle subtitle location" auto [row2-end] 
+                 [row3-start] "logo description description" auto  [row3-end] 
+                 [row4-start] "logo description description" auto  [row4-end] ;
+    /* grid-gap: 0.05em; */
+}
+
+.job .title{
+  grid-area: title;
+  /* background-color: green; */
+  border-radius: 25px;
+  font-size: 1.5em;
+  padding: 0.5em;
+  font-style: bold;
+
+}
+
+.job .logo{
+  grid-area: logo;
+  /* background-color: yellow; */
+  text-align: center;
+  padding: 0.5em;
+  /* padding-left: 1em; */
+}
+.job .subtitle{
+  grid-area: subtitle;
+  /* background-color: gr,een; */
+  padding: 0.5em;
+  font-style: italic;
+
+}
+.job .dates{
+  grid-area: dates;
+  /* background-color: red; */
+  border-radius: 25px;
+  padding: 0.5em;
+  text-align: right;
+}
+.job .location{
+  grid-area: location;
+  /* background-color: violet; */
+  border-radius: 25px;
+  padding: 0.5em;
+  text-align: right;
+  font-style: italic;
+
+}
+.job .description{
+  grid-area: description;
+  /* background-color: blue; */
+  border-radius: 25px;
+  padding: 0.5em;
+  text-align: left;
+  vertical-align: center;
+
+}
+
+.skills .column {
+  /* -ms-flex: 0 0 50%;
+  flex: 0 0 50%; */
+  max-width: 50%;
+  box-shadow: 0 5px 38px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  background-position: fixed;
+  border-radius: 25px;
+  margin:1em auto;
+  padding: 0.7em;
+}
+
+.skills .column ul, ul.job-description {
+  list-style-type: none;
+}
+
+.skills .column ul > li:before {
+  content: "•";
+  padding-right: 0.5em;
+  color:black;
+}
+
+.school, .job-title {
+  text-transform: capitalize;
+}
+
+.school span, .job-title span {
+  color: #889499;
+  text-decoration: underline;
+}
+
+ul.job-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background-image: url('./img/bg.jpg');
+ color: rgb(0, 0, 0);
+ text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
