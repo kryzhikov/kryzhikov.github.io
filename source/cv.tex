@@ -1,0 +1,261 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{makecell}
+\usepackage[link=off]{phonenumbers}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[margin=0.3in]{geometry}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.0in}
+\addtolength{\evensidemargin}{-0.0in}
+\addtolength{\textwidth}{0in}
+\addtolength{\topmargin}{20pt}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  linkbordercolor=red,
+  urlcolor=blue!70!black
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+  	\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+% \usepackage[dvipsnames]{xcolor}
+
+\definecolor{mygray}{gray}{0}
+
+\usepackage{fancybox}
+
+\usepackage{lmodern}
+\usepackage{tikz}
+
+% Style definition
+\tikzset{rndblock/.style={rounded corners,rectangle,draw,outer sep=0pt}}
+
+% Command Definition
+% 1 optional to customize the aspect, 2 mandatory: text to be framed
+\newcommand{\tframed}[2][]{\tikz[baseline=(h.base)]\node[rndblock,#1] (h) {\color{black}{#2}};}
+
+\newcommand*{\mystrut}{\rule[-0.2\baselineskip]{0pt}{0.8\baselineskip}}
+\newcommand{\skill}[1]{\tframed[lightgray]{\mystrut#1}}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+      {\scriptsize#5}
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeProjSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{changepage}
+\newcommand{\resumeDesc}[1]{\begin{adjustwidth}{5pt}{0pt}\vspace{-2pt}{\small{#1}}\end{adjustwidth}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Kirill Ryzhikov} & Email : \href{mailto:k.ryzhikov@yahoo.com}{k.ryzhikov@yahoo.com}\\
+  Github: \href{https://github.com/kryzhikov}{kryzhikov} & Mobile : +44\hspace{0.5ex}7539\hspace{0.5ex}898109 \\
+  Telegram: \href{https://t.me/kryzhikov}{@kryzhikov}
+\end{tabular*}
+
+\section{Personal Info}
+AI-enthusiast, experienced at classical machine learning tasks and more sophisticated modern deep learning approaches, passionate about quantitative finances and DeFi based products.
+Looking for quantitative researcher positions for algo-trading, automated market making and liquidity providing.
+
+\textbf{Looking for relocate possibilities, visa sponsorship needed.}
+
+
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeExpSubheading
+{\href{https://www.squarepoint-capital.com}{Squarepoint Capital LLP}}{London, UK}
+{\textbf{Quantitative Researcher}, intraday equties strategies}{October 2022 - (Present)}
+{\skill{Machine Learning} \skill{Deep Learning} \skill{PyTorch} \skill{Boostings} \skill{Finance} \skill{Market Microstructure}\skill{Time-Series}}
+\resumeDesc{
+  \begin{itemize}
+    \item Working on middle frequency strategies.
+    \item Researching intraday and daily equities markets alpha.
+    \item Performing end-2-end strategies research pipeline.
+  \end{itemize}}
+
+
+\resumeExpSubheading
+{\href{https://mynalabs.ai}{Myna Labs}}{San-Francisco, USA (remote)}
+{\textbf{Engineer and researcher advisor}, computer vision and signal processing}{November 2021 - (Present, Advisor)}
+{\skill{Deep Learning} \skill{PyTorch} \skill{Triton} \skill{CUDA} \skill{Machine Learning} \skill{Time-Series}}
+\resumeDesc{
+  \begin{itemize}
+    \item Working on research of real-time audio driven video generation for different platforms.
+    \item Deploying deep learning powered service as server-side and server-less solutions.
+    \item Managed to increase server-side solution by \textbf{50\%} and implemented  parallel requests processing.
+  \end{itemize}}
+
+
+\resumeExpSubheading
+{\href{https://www.tinkoff.ru/career/it/ml/}{Tinkoff Bank}}{Moscow, Russia}
+{\textbf{Machine Learning Researcher}, Several deep learning tasks, computer vision, NLP, signal processing etc.}{March 2020 - Nov. 2021}
+{\skill{Deep Learning} \skill{PyTorch} \skill{Triton} \skill{CUDA} \skill{Machine Learning} \skill{SQL}}
+\resumeDesc{
+  \begin{itemize}
+    \item Worked in research department, building cutting-edge banking and not-banking products.
+    \item Deploying deep learning models in production, performing internal research, writing publications (see publications part).
+    \item Managed to reduce face-parsing data-base size by almost  \textbf{10} times with filtering and postprocessing. Developed AI-chat bot with talking head and presented it at biggest EMEA conference SPIEF.
+  \end{itemize}}
+
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Moscow State University}{Moscow, Russia}
+{Bachelor Degree in Computer Science}{Sept. 2019 - Aug. 2023}
+\resumeItemListStart
+\resumeItem{Department}
+{Department of Mathematical Statistics, Mathematical Finances Laboratory}
+\resumeItem{Thesis}
+{Developing news-aware event driven trading algorithm}
+\resumeItem{GPA}
+{4.5/5}
+\resumeItemListEnd
+\resumeSubheading
+{Center Of Mathematical Finances}{Online}
+{Quantitative finances}{Sept. 2021 - Aug. 2022}
+\resumeItemListStart
+\resumeItem{First Year}
+{Developing option pricing algorithm, developing HFT-strategy}
+\resumeItem{Graduate Program Project}
+{Uniswap v3 AMM strategies research}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\section{Publications}
+\resumeSubHeadingListStart
+
+\resumeProjSubheading
+{\href{https://github.com/kryzhikov/kryzhikov.github.io/blob/main/docs/63allrussmipt.pdf}{63-th All-Russian scientific conference at MIPT}}{Moscow, Russia}
+{\skill{Best research paper and project in AI section}}{23 Nov. - 29 Nov. 2020}
+\resumeDesc{Presented new State Of The Art approach for facial mimics reenactment from audio and video sources, using Transposed Convolutions and specific audio-signal and mimics representation, resulting end2end real-time talking heads generation service.}
+
+
+\resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Languages}{: Python,  C++, CUDA. }
+      }\vspace{-7pt}
+\item{
+            \textbf{Technologies}{: Git, Docker, Linux. }
+      }
+\vspace{-7pt}
+\item{
+            \textbf{Knowledge}{: Algorithms, Data Structures, Machine Learning, Deep Learning, CI/CD, Backtesting.}
+      }
+\resumeSubHeadingListEnd
+
+
+\section{Other activities}
+\resumeSubHeadingListStart
+
+\resumeProjSubheading
+{\href{https://algocode.ru/mlwinter2022/}{Tinkoff ML/DL Educational Programs}}{Moscow, Russia}
+{\skill{Lecturer, ML/DL course owner, Seminars teacher }}{23 Nov. 2020 - (Present)}
+\resumeDesc{Created program for 2 course for students in fields of machine learning and deep learning. Lead team of 4 teacher and 1 managers. 30\% of students later joined tinkoff team as interns.}
+
+\resumeExpSubheading
+{\href{https://www.producthunt.com/posts/botify-ai}{Ex-Human, Inc.}}{SF, USA (remote)}
+{\textbf{Computer Vision Engineer}, Developing end2end real-time chat bots visualization system}{March 2020 - Nov. 2021}
+{\skill{Deep Learning} \skill{PyTorch} \skill{Triton} \skill{CUDA}}
+\resumeDesc{
+  \begin{itemize}
+    \item Took part in developing next generation Ai-ChatBots platform.
+    \item Created MVP visual chat bots, that later became production solution.
+    \item Managed to increase time spent in app by nearly \textbf{30\%} in comparison with other popular chat-bot apps.
+  \end{itemize}}
+\resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
